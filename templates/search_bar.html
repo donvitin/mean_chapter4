@@ -1,0 +1,14 @@
+<!--
+TODO: this HTML should expose a search bar
+!-->
+  <div class="search-bar-wrapper">
+    <div>
+      <input type="text" class="search-bar-input" ng-model="searchText" ng-change="update()" >
+    </div>
+    <div class="autocomplete-result" ng-repeat="result in results" >
+      <!--<div  ng-show="results.length > 0" ng-repeat="result in results">-->
+        {{result.name}}
+      <!--</div>-->
+    </div>
+  </div>
+
